@@ -1,0 +1,133 @@
+.cta {
+  padding: 60px 24px 80px;
+  text-align: center;
+}
+
+.inner {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  margin-bottom: 12px;
+}
+
+.subtext {
+  font-size: 16px;
+  color: var(--color-text-secondary);
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.input {
+  flex: 1;
+  padding: 14px 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 15px;
+  font-family: var(--font-family);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  border-color: var(--color-accent);
+}
+
+.button {
+  padding: 14px 24px;
+  background: var(--color-accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--font-family);
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.button:hover {
+  background: var(--color-accent-hover);
+}
+
+.thanks {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 16px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-accent);
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.appStoreWrap {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.appStore {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--color-text);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: var(--radius-sm);
+  font-size: 15px;
+  transition: background 0.2s;
+}
+
+.appStore:hover {
+  background: #333;
+  color: #fff;
+}
+
+.appleLogo {
+  width: 20px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.appStoreSmall {
+  display: block;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1;
+  opacity: 0.85;
+}
+
+.appStoreLarge {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+@media (max-width: 560px) {
+  .cta {
+    padding: 60px 20px;
+  }
+
+  .heading {
+    font-size: 26px;
+  }
+
+  .form {
+    flex-direction: column;
+  }
+}

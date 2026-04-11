@@ -1,0 +1,143 @@
+.carousel {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.phonePlaceholder {
+  width: 280px;
+  height: 560px;
+  background: var(--color-text);
+  border-radius: 36px;
+  padding: 12px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.12), 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.phoneScreen {
+  width: 100%;
+  height: 100%;
+  background: var(--color-bg);
+  border-radius: 26px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.phoneStatusBar {
+  height: 44px;
+  background: #f5f5f5;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.phoneContent {
+  flex: 1;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.screenTitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.screenIcon {
+  font-size: 48px;
+  opacity: 0.3;
+  animation: bounce 1.5s ease-in-out infinite;
+}
+
+.screenItems {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  animation: fadeIn 0.5s ease;
+}
+
+.screenItem {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 12px;
+  background: rgba(232, 96, 10, 0.08);
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.dots {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: var(--color-border);
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 0;
+}
+
+.dot.active {
+  background: var(--color-accent);
+  width: 24px;
+  border-radius: 4px;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .phonePlaceholder {
+    width: 220px;
+    height: 440px;
+    border-radius: 28px;
+    padding: 10px;
+  }
+
+  .phoneScreen {
+    border-radius: 20px;
+  }
+
+  .phoneContent {
+    padding: 20px 16px;
+    gap: 12px;
+  }
+
+  .screenTitle {
+    font-size: 18px;
+  }
+
+  .screenIcon {
+    font-size: 36px;
+  }
+
+  .screenItem {
+    font-size: 12px;
+  }
+}
