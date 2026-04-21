@@ -20,6 +20,21 @@
   color: var(--color-accent);
 }
 
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.privacyLink {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.privacyLink:hover {
+  color: var(--color-accent);
+}
+
 .copy {
   font-size: 13px;
   color: var(--color-text-secondary);
