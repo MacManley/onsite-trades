@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import Hero from './components/Hero'
 import Features from './components/Features'
 import Highlights from './components/Highlights'
@@ -22,11 +22,11 @@ function Home() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
