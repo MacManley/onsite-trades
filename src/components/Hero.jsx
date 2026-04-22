@@ -29,7 +29,14 @@ export default function Hero() {
                 <span className={styles.appStoreLarge}>App Store</span>
               </div>
             </a> */}
-            <a href="#interest" className={styles.signupBtn}>
+            <a
+              href="#interest"
+              className={styles.signupBtn}
+              onClick={(e) => {
+                e.preventDefault()
+                document.getElementById('interest')?.scrollIntoView({ behavior: 'smooth' })
+              }}
+            >
               Get Updates
             </a>
           </div>
