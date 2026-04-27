@@ -30,14 +30,12 @@ export default function Hero() {
               </div>
             </a> */}
             <a
-              href="#interest"
+              href="https://apps.apple.com/ie/app/onsite-trades/id6761440069"
               className={styles.signupBtn}
-              onClick={(e) => {
-                e.preventDefault()
-                document.getElementById('interest')?.scrollIntoView({ behavior: 'smooth' })
-              }}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Get Updates
+              Pre-order Now
             </a>
           </div>
         </div>
